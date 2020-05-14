@@ -115,14 +115,14 @@
     grid-gap: 10px;
   }
   .imagen{
-    grid-area: imagen;  
+    grid-area: flex;  
   }
   .iagen .img{
       max-width: 70px;
   }
   .title{
     font-family: 'Lato', sans-serif;
-      grid-area: title;
+      grid-area: flex;
       font-size: 33px;
       font-weight: normal;
       margin: 0;
