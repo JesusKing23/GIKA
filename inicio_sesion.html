@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrate</title>
+    <link rel="icon" type="image/png" href="images2/logo.png" />
+          <link rel="stylesheet" href="css2/estilos.css" />
+    </head>
+<body>
+    <i class="icon-menu burger-button" id="burger-menu"></i>
+    <section class="header">
+      <div class="container">
+        <figure id="logo">
+          <img  src="images2/logo.png" height="" alt="" />
+          <b>   GIKA&reg; </b>
+        </figure>
+        <!-- <b class="link">Joyeria Artesanal a tu estilo&reg;</b> -->
+                <nav class="menu">
+          <ol>
+            <li>
+              <a class="link" href="#Galeria">Galeria</a>
+            </li>
+            <li>
+              <a class="link" href="#Ofertas">Ofertas</a>
+            </li>
+            <li>
+              <a class="link" href="#Registrate">Registrate</a>
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+ <div class="hero">
+     <div class="hero-container">
+         <form action="" class="form">
+            <p> Iniciar Sesión</p>  
+            <input type="email" placeholder="Correo Electrónico">  
+            <input type="email" placeholder="contraseña">  
+            <section id="contacto" class="contact">
+              <div class="container">
+                <div class="social">
+                  <a href="" class="social-link twitter"></a>
+                  <a href="https://www.facebook.com/gikartesanal/" class="social-link facebook"></a>
+                  <a href="" class="social-link github"></a>
+                  <a href="" class="social-link instagram"></a>
+                </div>
+              </div>
+            </section> 
+            <button type="email">Comenzar</button>
+         </form>
+         <div class="countdown">
+            <p> GIKA&reg; </p>
+            <p>
+                <span>Joyeria Artesanal a tu estilo&reg;</span>
+      
+            </p>
+         </div>
+     </div>
+ </div>  
+ <script>
+    // console.log('Hola mundo! es mi primera linea en JS');
+    const ipad = window.matchMedia('screen and (max-width: 768px)')
+     const menu = document.querySelector('.menu');
+     // console.log(menu);
+     const burgerButton = document.querySelector('#burger-menu');
+     // console.log(burgerButton);
+
+
+     ipad.addListener(validation)
+
+     function validation(event) {
+       if (event.matches) {
+         burgerButton.addEventListener('click', hideShow)
+       } else {
+         burgerButton.removeEventListener('click', hideShow)
+       }
+     }
+     validation(ipad);
+
+
+     function hideShow() {
+       if (menu.classList.contains('is-active')) {
+         menu.classList.remove('is-active');
+       } else {
+         menu.classList.add('is-active');
+       }
+     }
+         </script>  
+</body>
+</html>
