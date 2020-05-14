@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splash</title>
+    <link rel="icon" type="image/png" href="images/logo.png" />
+</head>
+<style>
+    body {
+    background-color: rgb(235, 234, 228);
+
+}
+
+.logo {
+  animation-name: spin;
+  animation-duration: 5000ms;
+  position: absolute;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+  align-items: center;
+  justify-content: center;
+   z-index: 1;
+}
+figure{
+   z-index: 2;
+  align-items: center;
+  justify-content: center;
+  position: fixed; 
+  top: 12%;
+  left: 28%;
+}
+.gika img{
+ height: 500px;
+  width: 620px;
+  border: 0;
+}
+div{
+    align-items: center;
+  justify-content: center;
+  position: fixed; 
+  top: 8%;
+  left: 29%;
+   
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+/* ---------------------------------------------------------- */
+
+
+#barra {
+	width: 670px;
+	height: 25px;
+	background-color: #dadada;
+	border-radius: 8px;
+	box-shadow: inset rgb(190, 190, 190) 0 3px 5px;
+  -moz-box-shadow: inset rgb(190, 190, 190) 0 3px 5px;
+  -webkit-box-shadow: inset rgb(190, 190, 190) 0 3px 5px;
+  -o-box-shadow: inset rgb(190, 190, 190) 0 3px 5px;
+	border: 1px solid rgb(187, 187, 187);
+	border-bottom: 1px solid rgb(250, 250, 250);
+    top: 78%;
+}
+
+#progreso {
+	width: 2%;
+	height: 23px;
+	border: 1px solid rgb(89, 93, 97);
+	border-top: 1px solid #E4EEFA;
+	background: linear-gradient(center top , rgb(128, 46, 71) 0%, rgba(255, 15, 107, 0.7) 100%);
+	background: -moz-linear-gradient(center top , rgb(128, 46, 71) 0%, rgba(255, 15, 107, 0.7) 100%);
+	background: -webkit-gradient(linear, left top , left bottom, from(rgb(128, 46, 71)), to(rgba(255, 15, 107, 0.7)));
+	background: -o-linear-gradient(center top , rgb(128, 46, 71)0%, rgba(255, 15, 107, 0.7) 100%);
+	border-radius: 8px;
+	transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -webkit-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  top: 78%;
+}
+
+#progreso:hover {
+	width: 43.6%;
+}
+
+
+/* ---------------------------------------------------------- */
+@media screen and (max-width: 1024px) {
+  
+.splash img{
+  height:400px;
+  width: 400px;     
+    }
+    .gika img{
+ height: 300px;
+  width: 420px;
+  border: 0;
+    }
+    figure{
+  top: 2%;
+  left: 25%;
+  top: 0;
+  bottom: 0;
+    }
+    div{
+  top: -10%;
+  left: 30%;
+  top: 1 -1;
+  bottom: 1 -1;
+    }
+    #barra {
+	width: 600px;
+	height: 20px;
+    top: 90%;
+    left: 20%;
+}
+
+#progreso {
+	width: 5%;
+	height: 20px;
+     top: 90%;
+     left: 20%;
+     
+     }
+    #progreso:hover {
+	width: 58.8%;
+}
+}
+  @media screen and (max-width: 768px) {
+    figure{
+  top: 6%;
+  left: 18%;
+  top: 1 -1;
+  bottom: 1 -1;
+    }
+    div{
+  top: -6%;
+  left: 24%;
+  top: 1 -1;
+  bottom: 1 -1;
+    }
+    #barra {
+	width: 600px;
+	height: 17px;
+    top: 93%;
+    left: 10%;
+}
+
+#progreso {
+	width: 5%;
+	height: 17px;
+     top: 93%;
+     left: 10%;
+     
+     }
+    #progreso:hover {
+	width: 78.1%;
+}
+  }
+
+@media screen and (max-width: 480px) {
+
+.splash{
+  grid-gap: 3px;
+} 
+
+    figure{
+  top: 5%;
+  left: 0%;
+  top: 1 -1;
+  bottom: 1 -1;
+    }
+    div{
+  top: -7%;
+  left: 10%;
+  top: 1 -1;
+  bottom: 1 -1;
+    }
+.gika{
+    grid-gap: 3px;
+} 
+#barra {
+	width: 400px;
+	height: 14px;
+    top: 93%;
+    left: 8%;
+}
+
+#progreso {
+	width: 5%;
+	height: 14px;
+     top: 93%;
+     left: 8%;
+     
+     }
+    #progreso:hover {
+	width: 83.2%;
+}
+
+
+}
+@media screen and (max-width: 320px) {
+
+    figure{
+  top: 6%;
+  left: -28%;
+  top: -0%;
+  bottom: 1 -1;
+    }
+    div{
+  top: -2%;
+  left: -12%;
+  top: -10%;
+  bottom: 1 -1;
+    }
+    #barra {
+	width: 300px;
+	height: 15px;
+    top: 92%;
+    left: 2.5%;
+}
+
+#progreso {
+	width: 12%;
+	height: 15px;
+     top: 92%;
+     left: 2.5%;
+     
+     }
+    #progreso:hover {
+	width: 93.4%;
+}
+}
+</style>
+<body>
+    <div> <div class="splash">
+        <div class="logo">
+            <img src="images/logo.png" height="" alt=""/>
+      </div></div></div>
+      <figure class="gika">
+        <img src="images/gika.png" height="" alt=""/>
+      </figure>
+<!--       ----------------------------------------------------------------- -->
+      <div id="barra">
+        <div id="progreso">
+        </div>
+    </div>
+   <!--  ---------------------------------------------------------------------- -->
+</body>
+</html>
